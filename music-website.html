@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Website - Project</title>
+    <link rel="stylesheet" href="music.css">
+    <style>
+        /* Inline CSS for simplicity */
+        .hidden-content {
+            display: none;
+        }
+        .read-more-btn {
+            color: #007BFF;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .read-more-btn:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Music Website Project</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Project Overview</h2>
+        <p id="project-overview">
+            This project involves the creation of a dynamic website dedicated to streaming Namibian music. The website offers a vibrant and engaging platform for users to explore and enjoy a diverse collection of Namibian music tracks.
+        </p>
+        <div id="more-content" class="hidden-content">
+            <p>
+                **Features:**
+                - **Music Streaming:** Users can browse through a curated selection of Namibian music and stream their favorite tracks directly from the website.
+                - **User Interface:** Designed with a clean and intuitive interface, the website ensures an easy and enjoyable browsing experience. The layout highlights Namibian artists and genres, making it simple for users to find and listen to music.
+                - **Audio Integration:** Utilizes advanced audio playback functionality, allowing users to play, pause, and skip tracks seamlessly.
+                - **Responsive Design:** The site is fully responsive, ensuring a smooth experience across various devices, from desktops to mobile phones.
+            </p>
+            <p>
+                **Technologies Used:**
+                - **Frontend:** HTML, CSS, JavaScript
+                - **Backend:** Node.js (for handling audio files and user requests)
+                - **Design:** Custom styling and layout to reflect the cultural essence of Namibian music
+            </p>
+        </div>
+        <span id="read-more" class="read-more-btn">Read More</span>
+    </section>
+    <div class="gallery">
+        <h3>Project Screenshots</h3>
+        <img src="a.png" alt="Music Website Screenshot 1">
+        <img src="b.png" alt="Music Website Screenshot 2">
+    </div>
+    <div class="video">
+        <h3>Project Video</h3>
+        <video controls width="600">
+            <source src="v.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <footer>
+        <p>&copy; 2024 Author: Dionisius Pandueleni Aron</p>
+    </footer>
+    <script>
+        document.getElementById('read-more').addEventListener('click', function() {
+            var moreContent = document.getElementById('more-content');
+            var btn = document.getElementById('read-more');
+            if (moreContent.style.display === 'none') {
+                moreContent.style.display = 'block';
+                btn.textContent = 'Read Less';
+            } else {
+                moreContent.style.display = 'none';
+                btn.textContent = 'Read More';
+            }
+        });
+    </script>
+</body>
+</html>
+
+
